@@ -6,6 +6,7 @@
 class Shopping:
     cart = []   # class attribute  # static attribute
 
+    @classmethod
     def __init__(self,name,location):
         self.name = name            # instance attribute
         self.location = location
@@ -25,7 +26,7 @@ class Shopping:
 
 
 bashundhara = Shopping('Bashundhara','Not popular location')
-bashundhara.purchase('lungi',500,1000)
+
 
 bashundhara.hudai_dekhi('lungi')
 Shopping.hudai_dekhi('Lungi')
